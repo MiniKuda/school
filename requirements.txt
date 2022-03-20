@@ -1,0 +1,4 @@
+discord==22.0.4
+asyncio==3.4.3
+datetime==4.4
+random==22.0.4
