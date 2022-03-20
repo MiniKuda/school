@@ -1,4 +1,5 @@
 import discord, asyncio, datetime, random
+import os
 #from discord.colour import Color
 #from discord.enums import PremiumType
 
@@ -157,5 +158,5 @@ async def on_message(message):
 
 
 
-
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
