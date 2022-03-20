@@ -1,0 +1,1 @@
+woker: python school.py
