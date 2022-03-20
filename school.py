@@ -3,7 +3,7 @@ import discord, asyncio, datetime, random
 #from discord.enums import PremiumType
 
 
-token = "OTU0NzUxMDQ5NzY2NDA4MjIz.YjXrNA._EhydxyMrRp6pCOuMiXRUa9RSmY"
+token = "OTU0NzUxMDQ5NzY2NDA4MjIz.YjXrNA.tJe-ZqT5BFIvBjPcHhFaWOhUN4Y"
 client = discord.Client()
 
 @client.event
