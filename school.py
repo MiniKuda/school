@@ -4,7 +4,7 @@ import os
 #from discord.enums import PremiumType
 
 
-token = "OTU0NzUxMDQ5NzY2NDA4MjIz.YjXrNA.tJe-ZqT5BFIvBjPcHhFaWOhUN4Y"
+token = " "
 client = discord.Client()
 
 @client.event
