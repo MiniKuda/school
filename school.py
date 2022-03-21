@@ -39,7 +39,7 @@ async def on_message(message):
 
     if message.content.startswith("!정보"):
             date = datetime.datetime.utcfromtimestamp(((int(message.author.id) >>22) + 1420070400000) / 1000)
-            embed = discord.Embed(Color=0x00ff00)
+            embed = colour=discord.Colour.blue()
             embed.add_field(name="이름", value=message.author.name, inline=False)
             embed.add_field(name="서버닉네임", value=message.author.display_name, inline=False)
             embed.add_field(name="가입일", value=str(date.year) + "년" + str(date.month) + "월" +  str(date.day) + "일", inline=False)
