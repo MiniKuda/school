@@ -66,7 +66,6 @@ async def on_message(message):
         await message.channel.send("담임: 김인영\n11101 강준우 11102 김동환 11103 김민혁 11104 김선욱 11105 김영범\n11106 김이안 11107 김한울 11108 이준봉 11109 박선우 11110 박신영\n11111 박재헌 11112 박정우 11113 손찬영 11114 송정헌 11115 이승준\n11116 이주호 11117 임재선 11118 임진성 11119 정진섭 11120 채종엽\n11121 최경서 11122 최진재 11123 황인성 11124 황지효 11125 김세현\n11126 김지수")
     if message.content == "!평가계획":
         await message.channel.send("https://media.discordapp.net/attachments/840850434583298103/955738477067116574/20220322_170239.jpg")
-    if message.content == "!사회":
         await message.channel.send("https://media.discordapp.net/attachments/840850434583298103/955738487997481010/20220322_170253.jpg")
         await message.channel.send("https://media.discordapp.net/attachments/840850434583298103/955738572319772682/20220322_170304.jpg")
 
