@@ -37,7 +37,7 @@ async def on_message(message):
             ch = client.get_channel(int(message.content[4:22]))
             await ch.send(message.content[23:])
 
-    if message.content.startswith("!정보"):
+    if message.content.startswith("!정보"):#구지 필요없다고 생각하지만 그대로 둠
             date = datetime.datetime.utcfromtimestamp(((int(message.author.id) >>22) + 1420070400000) / 1000)
             embed = discord.Embed(Color=0x00ff00)
             embed.add_field(name="이름", value=message.author.name, inline=False)
@@ -50,18 +50,18 @@ async def on_message(message):
 
     msg = message.content
 
-    if message.content == "!랜덤번호":
+    if message.content == "!랜덤번호":#11반 랜덤으로 번호 추첨
         await message.channel.send(random.randint(1,26))
 
-    if message.content == "!타이머":
+    if message.content == "!타이머":#구지 필요없다고 생각하지만 그대로 둠
         await message.channel.send(f"{message.author.mention}, 60초 뒤 태그해서 알려드릴께요!")
         await asyncio.sleep(60)
         await message.channel.send(f"{message.author.mention}, 시간이 지났어요!")
 
-    if message.content == "!시간표":
+    if message.content == "!시간표":#시간표 사진
         await message.channel.send("https://cdn.discordapp.com/attachments/840850434583298103/954741893655310386/BandPhoto_2022_02_25_21_07_23.jpg")
 
-    if message.content == "!11반":
+    if message.content == "!11반":#
         await message.channel.send("담임: 김인영\n11101 강준우 11102 김동환 11103 김민혁 11104 김선욱 11105 김영범\n11106 김이안 11107 김한울 11108 이준봉 11109 박선우 11110 박신영\n11111 박재헌 11112 박정우 11113 손찬영 11114 송정헌 11115 이승준\n11116 이주호 11117 임재선 11118 임진성 11119 정진섭 11120 채종엽\n11121 최경서 11122 최진재 11123 황인성 11124 황지효 11125 김세현\n11126 김지수")
 
 
