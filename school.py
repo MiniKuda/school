@@ -64,9 +64,15 @@ async def on_message(message):
     if message.content == "!11반":#
         await message.channel.send("담임: 김인영\n11101 강준우 11102 김동환 11103 김민혁 11104 김선욱 11105 김영범\n11106 김이안 11107 김한울 11108 이준봉 11109 박선우 11110 박신영\n11111 박재헌 11112 박정우 11113 손찬영 11114 송정헌 11115 이승준\n11116 이주호 11117 임재선 11118 임진성 11119 정진섭 11120 채종엽\n11121 최경서 11122 최진재 11123 황인성 11124 황지효 11125 김세현\n11126 김지수")
 
+    if message.content.startswith(';채팅반환'): #이걸 쳤을때
+        channel = message.channel
+        await channel.send('채팅반환을 쳐주세요.') #이 메시지를 보네고
 
+        def check(m):
+            return m.content == '채팅반환' and m.channel == channel #이 메시지를 쳤을경우
 
-
+        msg = await client.wait_for('message', check=check)
+        await channel.send(f'{message.author.mention}, 확인 했습니다!'.format(msg)) #이 메시지 전송 다른 메시지를 쳤을때는 활동 안함
 
 
 
